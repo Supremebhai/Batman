@@ -1,7 +1,11 @@
 <!doctype html>
 <html lang="en">
 <head>
-  <!-- Meta Pixel Code -->
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Batman (Official) — Landing</title>
+
+<!-- ✅ Meta Pixel Code (Correct Position) -->
 <script>
 !function(f,b,e,v,n,t,s)
 {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
@@ -18,10 +22,7 @@ fbq('track', 'PageView');
 src="https://www.facebook.com/tr?id=1606198513699179&ev=PageView&noscript=1"
 /></noscript>
 <!-- End Meta Pixel Code -->
-  
-<meta charset="utf-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>Batman (Official) — Landing</title>
+
 <style>
 :root{
   --bg-top:#030305;
@@ -54,6 +55,7 @@ h1{margin:6px 0 8px 0;font-size:22px;letter-spacing:1px;color:var(--accent-yello
 .disclaimer{font-size:12px;line-height:1.5;color:rgba(230,239,233,0.6);margin-top:14px}
 @media (max-width:480px){.card{padding:28px 18px;border-radius:18px}.avatar{width:100px;height:100px}.countdown{font-size:40px}}
 </style>
+
 </head>
 <body>
   <div class="card" role="main">
@@ -69,7 +71,10 @@ h1{margin:6px 0 8px 0;font-size:22px;letter-spacing:1px;color:var(--accent-yello
     <div class="countdown" id="timer">0:58</div>
     <div class="count-label">Seconds Left</div>
 
-    <a id="join-btn" class="cta" href="https://t.me/+prbdNf9gLU03MzZl" target="_blank" rel="noopener">JOIN THE CHANNEL NOW</a>
+    <a id="join-btn" class="cta" 
+       href="https://t.me/+prbdNf9gLU03MzZl" 
+       target="_blank" 
+       rel="noopener">JOIN THE CHANNEL NOW</a>
 
     <p class="lead">Sharing expertise as a dedicated cricket analyst</p>
     <div class="divider" aria-hidden="true"></div>
@@ -90,6 +95,12 @@ h1{margin:6px 0 8px 0;font-size:22px;letter-spacing:1px;color:var(--accent-yello
   }
   tick();
 })();
+
+// ✅ Subscribe Event (JOIN Button Click)
+document.getElementById("join-btn").addEventListener("click", function () {
+    fbq('track', 'Subscribe');
+});
 </script>
+
 </body>
 </html>
